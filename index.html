@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Yadea Electric Bike</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Embed your css here-->
+    <title>LAMIA Design</title>
+
+    <!--CSS formatting for menu-->
+    <style>
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #059085;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        color: #f3f90e;
+      }
+
+      .sidebar a:hover {
+        color: #ffffff;
+      }
+
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #f76e12;
+        color: white;
+        padding: 10px;
+        border: none;
+      }
+
+      .openbtn:hover {
+        background-color: #0bc9c0;
+      }
+
+      #main {
+        transition: margin-left 0.5s;
+        padding: 10px;
+        margin-left: 300px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidebar {
+          padding-top: 15px;
+        }
+        .sidebar a {
+          font-size: 18px;
+        }
+      }
+    </style>
+
+    <!--Embed your CSS here-->
+
     <link rel="stylesheet" href="css/styleindex.css" />
   </head>
 
@@ -12,202 +82,194 @@
     <div>
       <!--div contains all the web page content-->
 
-      <div id="header">
-        <!--div contains header content-->
-
-        <div>
-          <p id="p1">Electrify your life</p>
-        </div>
-
-        <div>
-          <img src="images/Logo.PNG" alt="Yadea" />
-        </div>
-
-        <div id="p2">
-          <p>Always with you to conquer challenges</p>
-        </div>
-      </div>
-      <!-- finish div contains header content-->
-
-      <!-------------------------------------------------------------------------------------------------------------------->
-
-      <div>
+      <div id="mySidebar" class="sidebar">
         <!--div contains Menu content-->
 
-        <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Party dress</a>
+        <a href="#">A-line dress</a>
+        <a href="#">Pleated Dress</a>
+        <a href="#">Women's Shirts</a>
+        <a href="#">Contact</a>
       </div>
       <!-- Finish div contains Menu content-->
 
       <!-------------------------------------------------------------------------------------------------------------------->
 
-      <div>
-        <!--div contains Best Seller content-->
+      <div class="header">
+        <!--div contains header content-->
 
-        <h1 class="title">Best Seller</h1>
-
-        <div id="best-seller">
-          <div id="first-vehicle">
-            <img src="images/Yadea01.jpg" alt="Yadea" />
-          </div>
-
-          <div id="second-vehicle">
-            <img src="images/Yadea02.jpg" alt="Yadea" />
-          </div>
-
-          <div id="thirdth-vehicle">
-            <img src="images/Yadea03.jpg" alt="Yadea" />
-          </div>
-
-          <div>
-            <img src="images/Yadea04.jpg" alt="Yadea" />
-          </div>
+        <div id="logo">
+          <a href="index.html"><img src="images/logochanel.png" /></a>
         </div>
 
-        <div id="best-seller-description">
-          <p>
-            YADEA – The world's number 1 best-selling electric vehicle brand
-          </p>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Search in website" />
+            <button type="submit">Search</button>
+          </form>
         </div>
-      </div>
-      <!-- Finish div contains Best Seller content-->
-
-      <!-------------------------------------------------------------------------------------------------------------------->
-
-      <div>
-        <!--div contains Banner content-->
-
-        <img id="banner" src="images/banner.jpg" alt="Yadea" />
-      </div>
-      <!-- Finish div contains Banner content-->
-
-      <!-------------------------------------------------------------------------------------------------------------------->
-
-      <div>
-        <!--div contains Sale Off 10% content-->
-
-        <h1 class="title">Sale Off 10%</h1>
-
-        <div id="saleoff">
-          <div>
-            <img src="images/yadea_voltguard.jpg" alt="yadea voltguard" />
-          </div>
-
-          <div id="saleoffpara">
-            <h2>YADEA VOLTGUARD</h2>
-            <p>Stronger – More Stable – Smoother</p>
-            <p>
-              Equipped with a maximum capacity motor of 2800W, durable
-              operation, single coil technology, high density coil, neat flat,
-              low gap, helps increase motor efficiency by 35%. Energy recovery
-              controller.
-            </p>
-            <p>Maximum speed : 50 km/h</p>
-            <p>Price : $1320</p>
-          </div>
-
-          <div>
-            <img src="images/engine.jpg" alt="yadea voltguard" />
-          </div>
-        </div>
-
-        <div style="clear: both"></div>
-      </div>
-      <!--Finish div contains Sale Off 10% content-->
-
-      <!-------------------------------------------------------------------------------------------------------------------->
-
-      <div id="Store">
-        <!--div contains List of Electric Motorcycles Most Popular with Customers content-->
-
-        <h1 class="title">
-          List of Electric Motorcycles Most Popular with Customers
-        </h1>
 
         <div>
-          <img
-            id="yadeastoreimg"
-            src="images/StoreYadea.jpg"
-            alt="Yadea Store"
-          />
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Menu</button>
+          </div>
         </div>
-        <div id="blockform">
-          <div id="form">
-            <div>
-              <h2 id="formtitle">
-                --------- Choose the electric vehicle you like best ----------
-              </h2>
-            </div>
-            <div id="formbody">
-              <div>
-                <label class="labelform" class="labelform">Tour</label>
-                <select class="option" name="tour">
-                  <option value="1000">YADEA Ossy</option>
-                  <option value="1100">YADEA Oris</option>
-                  <option value="1250">YADEA Voltguard</option>
-                  <option value="550">YADEA I6</option>
-                  <option value="650">YADEA I8</option>
-                </select>
-              </div>
+      </div>
+      <!-- Finish div contains header content-->
 
-              <div>
-                <label class="labelform">Color</label>
-                <select class="option" name="color">
-                  <option value="20">Creamy white</option>
-                  <option value="30">Eucalyptus green</option>
-                  <option value="15">Matte black</option>
-                  <option value="10">Green</option>
-                </select>
-              </div>
+      <!-------------------------------------------------------------------------------------------------------------------->
 
-              <div>
-                <label class="labelform"> FullName </label>
-                <input class="input" type="text" name="namekh" />
-              </div>
+      <div>
+        <!--div contains Best Sellers content-->
 
-              <div>
-                <label class="labelform"> Phone </label>
-                <input class="input" type="text" name="phone" />
-              </div>
-
-              <div>
-                <label class="labelform"> Address </label>
-                <input id="address" type="text" name="ngaykt" />
-              </div>
-            </div>
-            <div id="buy">
-              <p>Buy Now</p>
+        <h1 class="tittle">Best Sellers</h1>
+        <div class="bs">
+          <div class="bsgallery">
+            <div class="smimg">
+              <img src="images/B01.jpg" alt="Lamia" />
+              <img src="images/B02.jpg" alt="Lamia" />
+              <img src="images/B03.jpg" alt="Lamia" />
+              <img src="images/B04.jpg" alt="Lamia" />
             </div>
 
-            <div>
-              <h3 id="formtitle2">
-                ---------- 12 Month Warranty for battery ----------
-              </h3>
+            <div class="lgimg">
+              <img src="images/Banner01.jpg" alt="Lamia" />
+            </div>
+          </div>
+
+          <div class="bsdes">
+            <h2>Women's Long-Sleeved V-Neck Shirt With Bow Tie</h2>
+            <p class="avail">(Available)</p>
+            <hr id="bshr" />
+            <p>Product code: LA392</p>
+
+            <p><del class="del">$30 </del> $25</p>
+            <form action="#" method="post">
+              <p>
+                <label>Number</label>
+                <input type="number" name="Number" min="1" max="100" />
+              </p>
+
+              <p>
+                <label>Size </label>
+                <input type="text" name="Size" placeholder="Enter Size" /> (S- M
+                - L- XL)
+              </p>
+            </form>
+
+            <div class="btnlist">
+              <div class="button">Add To Cart</div>
+              <div class="button">Buy Now</div>
+            </div>
+
+            <h3>Return policy</h3>
+            <div class="para">
+              <p>
+                Lamia hopes that you will like the product you ordered. However,
+                if you are not 100% satisfied, Lamia offers a simple return
+                process as follows:
+              </p>
+
+              <p>
+                1- You call Hotline 0969.436.090 or send a message on Lamia
+                design fanpage to notify about the exchange.
+              </p>
+              <p>
+                2- Lamia will check, confirm and support you within 30 minutes.
+              </p>
+              <p>
+                3- Exchange time within 7 days from the date you receive the
+                product.
+              </p>
+              <p>
+                4- The exchanged product must have the original label, barcode
+                and be unused.
+              </p>
+              <p>
+                5- If the error is due to the manufacturer, Lamia will fully
+                cover the shipping cost of the product exchange.
+              </p>
             </div>
           </div>
         </div>
-
         <div style="clear: both"></div>
       </div>
-      <!-- Finish div contains List of Electric Motorcycles Most Popular with Customers content-->
+      <!--Finish div contains Best Sellers content-->
 
-      <!------------------------------------------------------------------------------------------------------------------------>
+      <!---------------------------------------------------------------------------------------------------------------------->
 
-      <div id="fter">
-        <!--div contains footer content-->
+      <div>
+        <!--div contains NEW YEAR SALE OFF content-->
 
-        <p>Email : Yadea@gmail.com</p>
-        <p>Address: 100 To Hien Thanh, District 10, HCMC</p>
-        <h5>&copy; Copyright 2024. Yadea.com.vn</h5>
+        <h1 class="tittle">NEW YEAR SALE OFF</h1>
+        <div class="saleoff">
+          <div class="card">
+            <img src="images/dress01.jpg" alt="Lamia" />
+            <h4>Round neck flared A-line dress with flowers LD362</h4>
+            <p>
+              <del>30$ </del> &nbsp; &nbsp;<span class="new-price">25$</span>
+            </p>
+            <div class="button2">Buy Now</div>
+          </div>
+
+          <div class="card">
+            <img src="images/dress02.jpg" alt="Lamia" />
+            <h4>Pleated off-shoulder dress LD347</h4>
+            <p>
+              <del>28$ </del> &nbsp; &nbsp; <span class="new-price">24$</span>
+            </p>
+            <div class="button2">Buy Now</div>
+          </div>
+
+          <div class="card">
+            <img src="images/dress03.jpg" alt="Lamia" />
+            <h4>Short sleeve fishtail dress with pleated skirt LD257</h4>
+            <p>
+              <del>40$</del> &nbsp; &nbsp; <span class="new-price">34$</span>
+            </p>
+            <div class="button2">Buy Now</div>
+          </div>
+
+          <div class="card">
+            <img src="images/dress04.jpg" alt="Lamia" />
+            <h4>Short A-line dress with twisted neck LD209</h4>
+            <p>
+              <del>22$ </del> &nbsp; &nbsp;<span class="new-price">20$</span>
+            </p>
+            <div class="button2">Buy Now</div>
+          </div>
+        </div>
+        <div style="clear: both; margin-bottom: 10px"></div>
       </div>
-      <!-- Finish div contains footer content-->
+      <!-- Finish div contains NEW YEAR SALE OFF content-->
+
+      <!---------------------------------------------------------------------------------------------------------------------->
+
+      <div class="footer">
+        <!--div contains Footer content-->
+
+        <p>Email : Lamia@gmail.com</p>
+        <p>Address: 100 Quang Trung,Go vap District, HCMC</p>
+        <h5>&copy; Copyright 2024. Lamia.com</h5>
+      </div>
+      <!-- Finish div contains Footer content-->
     </div>
     <!--Finish div contains all the web page content-->
+
+    <!--Embed your Javascript here-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+    </script>
   </body>
 </html>

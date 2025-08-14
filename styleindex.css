@@ -1,172 +1,168 @@
 body {
-  margin: 0;
+  /* border: solid lightblue; */
+  margin: 0px;
 }
-.title {
+.tittle {
+  color: #f16d16;
   text-align: center;
 }
-/* header */
-#header {
+.header {
   display: flex;
-  align-items: center;
+  border-bottom: double lightblue;
   justify-content: space-around;
+  align-items: center;
 }
-#header img {
-  width: 50%;
-  margin-left: 60px;
+#logo {
+  width: 15%;
 }
-#p1 {
-  font-size: 30px;
+#logo img {
+  width: 100%;
 }
-#p2 {
-  font-size: 30px;
-  max-width: 20%;
+.search button {
+  background-color: #f16d16;
+  color: white;
+  border: none;
+  height: 20px;
 }
 
-/* menu bar */
-#menu {
-  background-color: #f79647;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  padding: 25px;
-}
-#menu a {
-  color: white;
-  text-decoration: none;
-  margin: 25px;
-}
 /* best seller */
-#best-seller {
+.bs {
   display: flex;
-}
-#best-seller img {
-  width: 80%;
-}
-#first-vehicle {
-  transform: translate(100px, 150px);
-  min-height: 330px;
-}
-#second-vehicle {
-  transform: translateX(50px);
-}
-#thirdth-vehicle {
-  transform: translate(50px, 150px);
-  min-height: 330px;
+  gap: 60px;
 }
 
-#best-seller-description {
+.bsgallery {
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background-color: #f79647;
-  max-width: 19%;
-  height: 70px;
-  transform: translate(660px, -330px);
-  font-style: italic;
+  width: 50%;
 }
-
-/* banner */
-#banner {
-  max-width: 100%;
-}
-/* sale off  */
-
-#saleoff {
+.smimg {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 50px;
+  margin-right: 10px;
+  width: 28%;
 }
-#saleoffpara h2 {
-  color: darkorange;
+.smimg img {
+  width: 100%;
 }
-#saleoffpara {
-  max-width: 26%;
-}
-#saleoffpara p {
-  margin-top: 30px;
-}
-
-/* store */
-#yadeastoreimg {
-  width: 55%;
-  margin: 20px 20px 20px 10px;
-}
-#Store {
-  position: relative;
-}
-#blockform {
-  position: absolute;
-  top: 62px;
-  left: 740px;
-}
-#formbody {
-  background-color: #e9e4e3;
-  position: absolute;
-  top: 70px;
-  width: 480px;
-  height: 380px;
+.lgimg img {
+  width: 100%;
 }
 
-#formtitle {
-  background-color: #11b6ac;
-  height: 60px;
-  width: 480px;
-  color: white;
-  font-size: 20px;
+.bsdes h2 {
+  color: #059386;
+  margin-top: 0px;
+  font-size: larger;
+}
+.avail {
+  color: aqua;
+}
+#bshr {
+  margin-right: 70px;
+  color: #059386;
+}
+.del {
+  color: red;
+}
+.btnlist {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-#formtitle2 {
-  background-color: #11b6ac;
-  height: 50px;
-  width: 480px;
-  color: white;
-  font-size: 20px;
+.button {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 380px;
-}
-
-.labelform {
-  min-width: 120px;
-  display: inline-block;
-  padding-left: 15px;
-  margin: 15px auto;
-}
-.input {
-  width: 220px;
-  height: 20px;
-}
-#address {
-  width: 270px;
-  height: 20px;
-}
-#buy {
-  position: absolute;
-  top: 310px;
-  left: 170px;
   color: white;
-  background-color: #e87f10;
-  width: 150px;
+  background-color: #059386;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
   height: 40px;
-  text-align: center;
-  border-radius: 7px;
+  border-radius: 5px;
+}
+.para p {
+  text-align: justify;
+  max-width: 500px;
+}
+/* .saleoff */
+.saleoff {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0 50px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 10px grey;
+  margin: 0px 20px;
+  flex: 1;
+}
+.card img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của card */
+  height: auto; /* Giữ tỷ lệ hình ảnh */
 }
 
-/* footer */
-#fter {
-  background-color: #373737;
+.button2 {
+  display: flex;
   color: white;
+  background-color: #059386;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.new-price {
+  color: red;
+}
+
+.footer {
+  color: white;
+  background-color: #504c4b;
   text-align: center;
+  padding: 10px;
+  margin-top: 50px;
   height: 120px;
-  max-width: 100%;
-  padding: 10px 0px;
-  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+  .bs {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .bsgallery {
+    flex-direction: column;
+  }
+
+  .smimg {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .bsdes {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .saleoff {
+    flex-direction: column; /* Chuyển từ hàng sang cột */
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .card {
+    flex: none; /* Hủy flex-grow */
+    width: 60%; /* Chiếm toàn bộ chiều rộng */
+    margin: 10px 0; /* Khoảng cách giữa các card */
+  }
 }
